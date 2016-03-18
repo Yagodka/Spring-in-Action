@@ -62,4 +62,22 @@
     <bean id="harmonica"
           class="com.springinaction.springidol.models.props.Harmonica"/>
 
+    <!-- Magician -->
+
+    <bean id="harry"
+          class="com.springinaction.springidol.models.performers.Magician">
+        <property name="magicBox" ref="magicBox" />
+        <property name="magicWords" value="Bippity boppity boo" />
+    </bean>
+
+    <bean id="magicBox"
+          class="com.springinaction.springidol.models.props.MagicBoxImpl">
+        <replaced-method
+                name="getContents"
+                replacer="tigerReplacer" />
+    </bean>
+
+    <bean id="tigerReplacer"
+          class="com.springinaction.springidol.models.props.TigerReplacer" />
+
 </beans>

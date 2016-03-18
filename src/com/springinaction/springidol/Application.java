@@ -15,5 +15,7 @@ public class Application {
         ((Performer) ctx.getBean("kenny")).perform();
         ((Performer) ctx.getBean("onemanband")).perform();
         ((Performer) ctx.getBean("david")).perform();
+        System.out.println("-------------------------------");
+        ((Performer) ctx.getBean("harry")).perform();
     }
 }
