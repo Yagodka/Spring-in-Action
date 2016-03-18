@@ -1,4 +1,7 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.models.performers;
+
+import com.springinaction.springidol.util.PerformanceException;
+import com.springinaction.springidol.models.props.Poem;
 
 public class PoeticJuggler extends Juggler {
     private Poem poem;

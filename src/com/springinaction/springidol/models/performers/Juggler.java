@@ -1,4 +1,6 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.models.performers;
+
+import com.springinaction.springidol.util.PerformanceException;
 
 public class Juggler implements Performer {
     private int beanBags = 3;

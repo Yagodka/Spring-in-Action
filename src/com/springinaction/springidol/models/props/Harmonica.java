@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.models.props;
 
 public class Harmonica  implements Instrument {
     public Harmonica() {

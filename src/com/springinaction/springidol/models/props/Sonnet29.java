@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.models.props;
 
 public class Sonnet29 implements Poem {
 

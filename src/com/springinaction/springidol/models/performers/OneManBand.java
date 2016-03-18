@@ -1,4 +1,7 @@
-package com.springinaction.springidol;
+package com.springinaction.springidol.models.performers;
+
+import com.springinaction.springidol.models.props.Instrument;
+import com.springinaction.springidol.util.PerformanceException;
 
 import java.util.Map;
 

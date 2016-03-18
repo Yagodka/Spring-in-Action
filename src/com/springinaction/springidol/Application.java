@@ -1,5 +1,7 @@
 package com.springinaction.springidol;
 
+import com.springinaction.springidol.models.performers.Performer;
+import com.springinaction.springidol.util.PerformanceException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -4,33 +4,33 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="duke"
-          class="com.springinaction.springidol.Juggler">
+          class="com.springinaction.springidol.models.performers.Juggler">
             <constructor-arg value="15" />
     </bean>
 
     <bean id="poeticDuke"
-          class="com.springinaction.springidol.PoeticJuggler">
+          class="com.springinaction.springidol.models.performers.PoeticJuggler">
             <constructor-arg value="15" />
             <constructor-arg>
-                <bean class="com.springinaction.springidol.Sonnet29" />
+                <bean class="com.springinaction.springidol.models.props.Sonnet29" />
             </constructor-arg>
     </bean>
 
     <bean id="theStage"
-          class="com.springinaction.springidol.Stage"
+          class="com.springinaction.springidol.models.Stage"
           factory-method ="getInstance" />
 
     <bean id="ticket"
-          class="com.springinaction.springidol.Ticket"
+          class="com.springinaction.springidol.models.Ticket"
           scope="prototype" />
 
     <bean id="auditorium"
-          class="com.springinaction.springidol.Auditorium"
+          class="com.springinaction.springidol.models.Auditorium"
           init-method="turnOnLights"
           destroy-method="turnOffLights"/>
 
     <bean id="baseSaxophonist"
-          class="com.springinaction.springidol.Instrumentalist"
+          class="com.springinaction.springidol.models.performers.Instrumentalist"
           abstract="true">
         <property name="instrument" ref="saxophone" />
         <property name="song" value="Jingle Bells" />
@@ -40,7 +40,7 @@
     <bean id="david" parent="baseSaxophonist" />
 
     <bean id="onemanband"
-          class="com.springinaction.springidol.OneManBand" >
+          class="com.springinaction.springidol.models.performers.OneManBand" >
 
         <property name="instruments">
             <map>
@@ -54,12 +54,12 @@
     </bean>
 
     <bean id="saxophone"
-        class="com.springinaction.springidol.Saxophone"/>
+        class="com.springinaction.springidol.models.props.Saxophone"/>
 
     <bean id="piano"
-          class="com.springinaction.springidol.Piano"/>
+          class="com.springinaction.springidol.models.props.Piano"/>
 
     <bean id="harmonica"
-          class="com.springinaction.springidol.Harmonica"/>
+          class="com.springinaction.springidol.models.props.Harmonica"/>
 
 </beans>
