@@ -9,9 +9,10 @@ public class Application {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext(
                 "com/springinaction/springidol/spring-idol.xml");
-        Performer performer = (Performer) ctx.getBean("duke");
 
-        performer.perform();
+        ((Performer) ctx.getBean("poeticDuke")).perform();
+        ((Performer) ctx.getBean("kenny")).perform();
+        ((Performer) ctx.getBean("onemanband")).perform();
 
     }
 }
